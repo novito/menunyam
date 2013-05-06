@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: menunyam_development 
+  pool: 5
+  username: novito 
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: menunyam_test 
+  pool: 5
+  username: novito 
+  password:
+
+cucumber:
+  <<: *test
