@@ -1,1 +1,7 @@
 <h1> Menus cerca de tu zona </h1>
+<%= form_tag menus_path, :method => :get do %>
+  <p> 
+    <%= select_tag 'city_id', options_for_select(City.all.collect{ |u| [u.name, u.id] }) %>
+    <%= submit_tag 'Search', :name => nil %>
+  </p>
+<% end %>
