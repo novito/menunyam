@@ -6,7 +6,7 @@ Feature: Find menus in restaurants
   Background:
     Given a city called "Barcelona"
     And a restaurant called "Les Palmeres" located in that city 
-    And a menu offered by that restaurant 
+    And a menu called "Menu del dia" is offered today by that restaurant 
     And a first plate in that menu called "Amanida de la casa"
     And a first plate in that menu called "Sopa de peix"
     And a second plate in that menu called "Botifarra amb seques"

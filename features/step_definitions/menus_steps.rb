@@ -10,3 +10,7 @@ And /^a restaurant called "([^"]*)" located in that city$/ do |city_name|
   @restaurant = FactoryGirl.create(:restaurant, :city => @city)
 end
 
+And /^a menu called "([^"]*)" is offered today by that restaurant$/ do |menu_name| 
+  @menu = FactoryGirl.create(:menu, :name => menu_name, :restaurant => @restaurant, :date => Date.today)
+end
+
