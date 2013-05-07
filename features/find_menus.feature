@@ -24,7 +24,8 @@ Scenario: Find restaurant should show me results for a selected city
     Given I am a visitor of the site
     When I go to the find menus page 
     And I select the city of "Barcelona"
-    Then I should see "Menus a Barcelona"
+    And I press the button "Cerca"
+    Then I should see "Menus a prop de Barcelona"
     And I should see "Menu del dia a les Palmeres" 
     And I should see "Primers plats" 
     And I should see "Amanida de la casa" 

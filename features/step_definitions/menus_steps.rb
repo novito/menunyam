@@ -19,4 +19,8 @@ And /^a "([^"]*)" plate in that menu called "([^"]*)"$/ do |plate_type, plate_na
   @plate = FactoryGirl.create(:plate, :type => plate_type, :name => plate_name, :menu => @menu)
 end
 
+And /^I select the city of "([^"]*)"$/ do |city_name|
+  select(city_name, :from => 'city_id')
+end
+
 
