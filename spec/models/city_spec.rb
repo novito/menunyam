@@ -9,6 +9,10 @@ describe City do
     FactoryGirl.build(:city, :name => nil).should_not be_valid
   end
 
+  it "is invalid without a name" do
+    FactoryGirl.build(:city, :name => nil).should_not be_valid
+  end
+
   describe "Attributes and methods tests" do
 
     before(:each) do
